@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
+import img1 from '../../public/auction1.png';
+import img2 from '../../public/auction2.png';
+import img3 from '../../public/auction3.jpeg';
+import img4 from '../../public/auction4.jpeg';
 
 export default function Home() {
   return (
@@ -26,12 +30,12 @@ export default function Home() {
         </div>
         <div className={styles.home_right}>
             <div className={styles.row_1}>
-                <Image src='/../public/auction1.png' width={150} height={180}/>
-                <Image src='/../public/auction2.png' width={150} height={180}/>
+                <Image src={img1} width={150} height={180}/>
+                <Image src={img2} width={150} height={180}/>
             </div>
             <div className={styles.row_2}>
-                <Image src='/../public/auction3.jpeg' width={150} height={180}/>
-                <Image src='/../public/auction4.jpeg' width={150} height={180}/>
+                <Image src={img3} width={150} height={180}/>
+                <Image src={img4} width={150} height={180}/>
             </div>
         </div>
     </div>
