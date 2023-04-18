@@ -48,7 +48,7 @@ const Auctions = () => {
           const provider = new ethers.providers.Web3Provider(ethereum);
           const signer = await provider.getSigner(); 
           const cusdContract = new ethers.Contract(cusdContractAddress,tokenAbi,signer);
-          const approval = await cusdContract.approve(contractAddress, (amount * 1e18));
+          const approval = await cusdContract.approve(contractAddress, amount);
           alert("Approving, please wait.")
           await approval.wait();
           alert('approved! Wait to bid immediately');
@@ -163,7 +163,7 @@ const Auctions = () => {
                             <p>Bid</p>
                             <input type='number' onChange={(e)=>{ setId(e.target.value)}} placeholder='Item ID'/>
                             <input type='number' onChange={(e)=>{ setAmount(e.target.value)}} placeholder='Amount'/>
-                            <button onClick={bid}>Pledge</button>
+                            <button onClick={bid}>Bid</button>
                             
                         </div>
                         </div>
