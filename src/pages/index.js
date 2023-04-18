@@ -20,7 +20,7 @@ export default function Home() {
           </h2>
           <p>We provide you the opportunity to raise an auction to sell
             those items you've always wanted the world to see and appreciate. 
-            Our numerous users are happy and eager to bid for them. <b>Bid with $cUsd and earn $NwizuGold</b>
+            Our numerous users are happy and eager to bid for them. <b>Bid with $cUSD and earn $NwizuGold</b>
           </p>
           <Link href='/listing'><button className={styles.btn}>List an Item</button></Link>
         </div>

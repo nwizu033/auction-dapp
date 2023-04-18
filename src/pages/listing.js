@@ -51,7 +51,7 @@ const Listing = () => {
                 <input type='text' placeholder='Item title'  onChange={(e)=>{setTitle(e.target.value)}}/>
                 <input type='text' placeholder='Item reward title(eg. Get 200 $NwizuGold)' onChange={(e)=>{setRewardTitle(e.target.value)}}/>
                 <input type='number' placeholder='Item reward value in ($NwizuGold)' onChange={(e)=>{setReward(e.target.value)}}/>
-                <input type='number' placeholder='Price in(cusd)' onChange={(e)=>{setPrice(e.target.value)}}/>
+                <input type='number' placeholder='Price in(cUSD)' onChange={(e)=>{setPrice(e.target.value)}}/>
                 <input type='number' placeholder='Start time in minutes' onChange={(e)=>{setStart(e.target.value)}}/>
                 <input type='number' placeholder='End time in minutes' onChange={(e)=>{setEnd(e.target.value)}}/>
                 <button type='submit' className={styles.btn} onClick={list}>List</button>

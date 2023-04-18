@@ -142,8 +142,8 @@ const Auctions = () => {
                         <h3>Item ID: {(res.itemId).toString()}</h3>
                         <h4>Reward detail: {(res.rewardTitle).toString()}</h4>
                         <h4>Reward Value: {((res.rewardValue)/1e18).toString()} ($NwizuGold)</h4>
-                        <h4>Set price: {((res.price)/1e18).toString()} ($cUsd)</h4>
-                        <h4>Current bid: {((res.currentBid)/1e18).toString()} ($cUsd)</h4>
+                        <h4>Set price: {((res.price)/1e18).toString()} ($cUSD)</h4>
+                        <h4>Current bid: {((res.currentBid)/1e18).toString()} ($cUSD)</h4>
                         <p>Start Time: {(date(res.startTime * 1000))}</p>
                         <p>End Time: {(date(res.endTime * 1000))}</p>
                         {(res.withdrawn) ? <p>Withdrawn: <span className={styles.green}>Yes</span></p> : <p> Withdrawn: <span className={styles.red}>No</span></p>}
